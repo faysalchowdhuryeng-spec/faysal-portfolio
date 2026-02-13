@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 /**
  * NextJS Resume Page (app directory / pages)
@@ -15,7 +16,7 @@ export default function ResumePage() {
         <header className="flex flex-col items-center gap-6 md:flex-row">
           <div className="flex-1">
             <h1 className="text-4xl font-extrabold leading-tight">Faysal Chowdhury</h1>
-            <p className="mt-1 text-gray-600 dark:text-gray-300">Web Developer • Laravel / WordPress / Frontend</p>
+            <p className="mt-1 text-gray-600 dark:text-gray-300">Web Developer • Laravel / WordPress / Frontend / Backend</p>
             <div className="flex flex-wrap gap-3 mt-4">
               {/* Enhanced Gradient - More cohesive and professional */}
               <a href="#contact" className="inline-flex items-center gap-2 px-4 py-2 text-sm text-white transition-all duration-200 border border-transparent rounded-full shadow bg-gradient-to-r from-indigo-700 to-indigo-500 hover:from-indigo-800 hover:to-indigo-600">
@@ -37,11 +38,11 @@ export default function ResumePage() {
               <img src="/image/Faysal.jpg" alt="avatar" className="object-cover w-full h-full"/>
             </div>
             <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">Bangladesh • Open to opportunities</p>
-            <div className="flex justify-center gap-2 mt-3">
+            {/* <div className="flex justify-center gap-2 mt-3">
               <a href="#download" className="px-3 py-1 text-xs transition-colors border rounded-full hover:bg-gray-50 dark:hover:bg-gray-800">
                 Download
               </a>
-            </div>
+            </div> */}
           </div>
         </header>
 
@@ -81,38 +82,54 @@ export default function ResumePage() {
                 <div className="flex gap-4">
                   <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-indigo-700 to-indigo-500 mt-2"></div>
                   <div>
-                    <div className="text-sm text-gray-500 dark:text-gray-400">2023 — Present</div>
-                    <div className="font-semibold">Senior Web Developer</div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400">23/05/2023 — 09/06/2023</div>
+                    <div className="font-semibold">Web Developer(Contractual)</div>
                     <div className="text-sm text-gray-600 dark:text-gray-300">Freelance / Remote</div>
-                    <p className="mt-2 text-sm text-gray-700 dark:text-gray-200">Built responsive Laravel and WordPress projects, integrated payment gateways, and delivered optimized frontends.</p>
+                      <p className="mt-2 text-sm text-gray-700 dark:text-gray-200">
+                        Built online property listing website that needs a modern and user-
+                        friendly website. I designed and developed a responsive WordPress website, optimizing it for both desktop and mobile devices.
+                      </p>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-indigo-700 to-indigo-500 mt-2"></div>
                   <div>
-                    <div className="text-sm text-gray-500 dark:text-gray-400">2020 — 2023</div>
-                    <div className="font-semibold">Frontend Developer</div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400">2017 — 2018</div>
+                    <div className="font-semibold">Web Developer & Designer</div>
                     <div className="text-sm text-gray-600 dark:text-gray-300">Agency</div>
-                    <p className="mt-2 text-sm text-gray-700 dark:text-gray-200">Converted designs to pixel-perfect UIs, added animations, and improved performance.</p>
+                      <p className="mt-2 text-sm text-gray-700 dark:text-gray-200">
+                        Full stack web developer responsible for end-to-end web app development.
+                        Designing and developing visually appealing and user-friendly websites and
+                        web applications. Collaborating with cross-functional teams to gather project
+                        requirements and ensure alignment with client objectives.
+                      </p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-indigo-700 to-indigo-500 mt-2"></div>
                   <div>
-                    <div className="text-sm text-gray-500 dark:text-gray-400">2020 — 2023</div>
-                    <div className="font-semibold">Frontend Developer</div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400">2014 — 2016</div>
+                    <div className="font-semibold">IT & Web Developer</div>
                     <div className="text-sm text-gray-600 dark:text-gray-300">Agency</div>
-                    <p className="mt-2 text-sm text-gray-700 dark:text-gray-200">Converted designs to pixel-perfect UIs, added animations, and improved performance.</p>
+                      <p className="mt-2 text-sm text-gray-700 dark:text-gray-200">
+                        Providing daily operational support and system administration for IT system
+                        infrastructure. Developing an official eCommerce website within official requirements.
+                      </p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-indigo-700 to-indigo-500 mt-2"></div>
                   <div>
-                    <div className="text-sm text-gray-500 dark:text-gray-400">2020 — 2023</div>
-                    <div className="font-semibold">Frontend Developer</div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400">2010 — 2013</div>
+                    <div className="font-semibold">Web Developer</div>
                     <div className="text-sm text-gray-600 dark:text-gray-300">Agency</div>
-                    <p className="mt-2 text-sm text-gray-700 dark:text-gray-200">Converted designs to pixel-perfect UIs, added animations, and improved performance.</p>
+                      <p className="mt-2 text-sm text-gray-700 dark:text-gray-200">
+                        Full stack web developer responsible for end-to-end web app development.
+                        Designing and developing visually appealing and user-friendly websites and web
+                        applications. Collaborating with cross-functional teams to gather project
+                        requirements and ensure alignment with client objectives.
+                      </p>
                   </div>
                 </div>
               </div>
@@ -147,7 +164,7 @@ export default function ResumePage() {
                     <div className="text-sm text-gray-500 dark:text-gray-400">2004</div>
                     <div className="font-semibold">Secondary School Certificate</div>
                     <div className="text-sm text-gray-600 dark:text-gray-300">Science • Baliher High School</div>
-                    <p className="mt-2 text-sm text-gray-700 dark:text-gray-200">Graduated with excellent results. Developed foundation in computer science and mathematics.</p>
+                    <p className="mt-2 text-sm text-gray-700 dark:text-gray-200">Passed with excellent results. Developed foundation in computer science and mathematics.</p>
                   </div>
                 </div>
               </div>
@@ -155,15 +172,249 @@ export default function ResumePage() {
 
             <article id="portfolio" className="p-6 bg-white border border-gray-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <h3 className="text-xl font-semibold">Portfolio</h3>
-              <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2">
-                <a className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:scale-[1.01] transition-all duration-200 hover:border-indigo-300 dark:hover:border-indigo-600" href="#" target="_blank" rel="noreferrer">
-                  <div className="font-semibold">SaaS Landing Page</div>
-                  <div className="mt-1 text-sm text-gray-500">Next.js • Tailwind • Stripe integration</div>
+              <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
+                
+                {/* Project 1 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="https://estateflow.kesug.com" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/EstateFlow.png" // Change to your actual file name
+                      alt="Estateflow (Real Estate)"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">Estateflow (Real Estate)</div>
+                    <div className="mt-1 text-sm text-gray-500">Wordpress</div>
+                  </div>
                 </a>
-                <a className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:scale-[1.01] transition-all duration-200 hover:border-indigo-300 dark:hover:border-indigo-600" href="#" target="_blank" rel="noreferrer">
-                  <div className="font-semibold">Portfolio Builder</div>
-                  <div className="mt-1 text-sm text-gray-500">Laravel • Filament • Multi-tenant</div>
+
+                {/* Project 2 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="https://woodmart.wuaze.com/" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/Woodmart.png" // Change to your actual file name
+                      alt="Woodmart (Furniture Store)"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">Woodmart (Furniture Store)</div>
+                    <div className="mt-1 text-sm text-gray-500">Wordpress</div>
+                  </div>
                 </a>
+
+                    
+                {/* Project 3 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="http://mymart.nichesite.org" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/Mymart.png" // Change to your actual file name
+                      alt="SaaS Landing Page"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">Mymart (Vegetarian Store)</div>
+                    <div className="mt-1 text-sm text-gray-500">Wordpress</div>
+                  </div>
+                </a>
+
+                    {/* Project 4 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="https://github.com/faysalchowdhuryeng-spec/filakit" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/main_dashboard.jpg" // Change to your actual file name
+                      alt="Portfolio Builder"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">Filakit (Filament Tenant Kit)</div>
+                    <div className="mt-1 text-sm text-gray-500">Laravel</div>
+                  </div>
+                </a>
+
+                {/* Project 5 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="http://carclaro.infinityfreeapp.com" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/listing.png" // Change to your actual file name
+                      alt="ListingPro (Classified Ads)"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">ListingPro (Classified Ads)</div>
+                    <div className="mt-1 text-sm text-gray-500">Wordpress</div>
+                  </div>
+                </a>
+
+                    
+                {/* Project 6 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="https://tripvibe.lovestoblog.com/" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/tripvibe.jpg" // Change to your actual file name
+                      alt="SaaS Landing Page"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">Tripvibe</div>
+                    <div className="mt-1 text-sm text-gray-500">Wordpress</div>
+                  </div>
+                </a>
+
+                {/* Project 7 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="#" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/gardenServicesthmb.jpg" // Change to your actual file name
+                      alt="Portfolio Builder"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">Clenning Services (Client's Demo)</div>
+                    <div className="mt-1 text-sm text-gray-500">Wordpress</div>
+                  </div>
+                </a>
+
+                    
+                {/* Project 8 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="https://eastendlogistics.com/" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/est_end_logistics.jpg" // Change to your actual file name
+                      alt="SaaS Landing Page"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">East End Logistics</div>
+                    <div className="mt-1 text-sm text-gray-500">Wordpress</div>
+                  </div>
+                </a>
+
+                {/* Project 9 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="https://www.harleystreetgynaecology.com/" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/harleystreetgynaecology.jpg" // Change to your actual file name
+                      alt="Portfolio Builder"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">Harleystreet Gynaecology</div>
+                    <div className="mt-1 text-sm text-gray-500">Laravel</div>
+                  </div>
+                </a>
+
+                    {/* Project 10 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="https://dev-shopnexa.pantheonsite.io/" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/ShopNexa.jpg" // Change to your actual file name
+                      alt="Portfolio Builder"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">Shop Nexa Medical Store (Sandbox Env)</div>
+                    <div className="mt-1 text-sm text-gray-500">Wordpress</div>
+                  </div>
+                </a>
+
+                    {/* Project 11 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="https://dev-mydemosite10.pantheonsite.io/" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/FreshFork.jpg" // Change to your actual file name
+                      alt="Portfolio Builder"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">Fresh Fork Restaurant (Sandbox Env)</div>
+                    <div className="mt-1 text-sm text-gray-500">Wordpress</div>
+                  </div>
+                </a>
+
+                    {/* Project 12 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="#" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/Vertex.jpg" // Change to your actual file name
+                      alt="Portfolio Builder"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">Vertex Propertise</div>
+                    <div className="mt-1 text-sm text-gray-500">Wordpress</div>
+                  </div>
+                </a>
+
+                    {/* Project 13 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="https://brunswickelectrical.com.au/" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/Electrician Brunswick.png" // Change to your actual file name
+                      alt="Portfolio Builder"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">Eastoe Electrical</div>
+                    <div className="mt-1 text-sm text-gray-500">Wordpress</div>
+                  </div>
+                </a>
+
+                    {/* Project 14 */}
+                <a className="block overflow-hidden transition-all duration-200 bg-white border border-gray-200 rounded-lg group dark:border-gray-700 hover:shadow-lg dark:bg-gray-800" href="https://othervisionltd.com/" target="_blank" rel="noreferrer">
+                  <div className="relative w-full overflow-hidden bg-gray-100 aspect-video dark:bg-gray-900">
+                    <Image 
+                      src="/image/Projects/Other Vision.png" // Change to your actual file name
+                      alt="Portfolio Builder"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <div className="font-semibold text-indigo-600 dark:text-indigo-400">Other Vision ltd.</div>
+                    <div className="mt-1 text-sm text-gray-500">Wordpress</div>
+                  </div>
+                </a>
+
               </div>
             </article>
 
@@ -201,7 +452,7 @@ export default function ResumePage() {
                   </div>
                 </div>
                 <div>
-                  <div className="text-sm font-medium">Database</div>
+                  <div className="text-sm font-medium">Mysql Database</div>
                   <div className="w-full h-2 mt-2 overflow-hidden bg-gray-200 rounded dark:bg-gray-700">
                     <div style={{width: '80%'}} className="h-2 bg-gradient-to-r from-indigo-700 to-indigo-500"></div>
                   </div>
@@ -219,10 +470,10 @@ export default function ResumePage() {
                 <div className="mt-2"><strong>Location:</strong> Naogaon, Bangladesh</div>
               </div>
               <div className="flex gap-3 mt-4">
-                <a href="#" className="px-3 py-2 text-sm transition-colors border border-gray-200 rounded dark:border-gray-700 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:border-indigo-200 dark:hover:border-indigo-800">
+                <a href="https://github.com/faysalchowdhuryeng-spec" className="px-3 py-2 text-sm transition-colors border border-gray-200 rounded dark:border-gray-700 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:border-indigo-200 dark:hover:border-indigo-800">
                   GitHub
                 </a>
-                <a href="#" className="px-3 py-2 text-sm transition-colors border border-gray-200 rounded dark:border-gray-700 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:border-indigo-200 dark:hover:border-indigo-800">
+                <a href="https://www.linkedin.com/in/faysal-chowdhury/" className="px-3 py-2 text-sm transition-colors border border-gray-200 rounded dark:border-gray-700 hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:border-indigo-200 dark:hover:border-indigo-800">
                   LinkedIn
                 </a>
               </div>
@@ -250,7 +501,7 @@ export default function ResumePage() {
               </ul>
             </div>
 
-            <div className="p-6 bg-white border border-gray-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            {/* <div className="p-6 bg-white border border-gray-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <h4 className="text-lg font-semibold">Certifications</h4>
               <ul className="mt-3 space-y-2 text-sm">
                 <li className="flex items-center gap-2">
@@ -266,7 +517,7 @@ export default function ResumePage() {
                   <span>AWS Cloud Practitioner</span>
                 </li>
               </ul>
-            </div>
+            </div>  */}
           </aside>
         </div>
 
