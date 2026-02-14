@@ -483,7 +483,7 @@ export default function ResumePage() {
               <h4 className="text-lg font-semibold">Resume</h4>
               <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Download a printable PDF version of this resume.</p>
               <div className="flex gap-2 mt-4">
-                <a id="download" href="/Faysal Chowdhury.pdf" download className="px-4 py-2 text-white transition-all duration-200 rounded shadow bg-gradient-to-r from-indigo-700 to-indigo-500 hover:from-indigo-800 hover:to-indigo-600">
+                <a id="download" href="/Faysal_Chowdhury.pdf" download className="px-4 py-2 text-white transition-all duration-200 rounded shadow bg-gradient-to-r from-indigo-700 to-indigo-500 hover:from-indigo-800 hover:to-indigo-600">
                   Download Resume
                 </a>
                 <a href="#" className="px-4 py-2 transition-colors border border-gray-200 rounded dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700">
